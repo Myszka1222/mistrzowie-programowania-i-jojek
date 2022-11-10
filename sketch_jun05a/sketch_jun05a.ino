@@ -1,4 +1,4 @@
-/*jebac halinke*/
+/*jebac halinke i zdzisia*/
 #define trigPin 12
 #define echoPin 11
  
