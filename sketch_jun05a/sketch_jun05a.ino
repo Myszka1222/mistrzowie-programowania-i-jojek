@@ -1,4 +1,5 @@
 /*jebac halinke i zdzisia*/
+//dsghfsdg
 #define trigPin 12
 #define echoPin 11
  
