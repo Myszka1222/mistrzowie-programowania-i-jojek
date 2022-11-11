@@ -10,7 +10,7 @@ void setup() {
 }
  
 void loop() {  
-  Serial.print(zmierzOdleglosc());
+  Serial.print(zmierzOdleglosc()); //qwewrty
   Serial.println(" cm");
   
   delay(500);
