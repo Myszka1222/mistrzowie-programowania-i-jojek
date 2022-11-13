@@ -1,0 +1,58 @@
+<!DOCTYPE HTML><html>
+  <head>
+    <title>ESP Pushbutton Web Server</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body { font-family: Arial; text-align: center; margin:0px auto; padding-top: 30px; background-color: #FFDAB9;}
+      .button {
+        padding: 10px;
+      }  
+      .button:hover {background-color: #4682B4;}
+      .button:active {
+        background-color: #DDA0DD;
+        box-shadow: 0 4px #666;
+        transform: translateY(2px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>KERFUS</h1>
+    <button class="button" style="display:inline-block" onmousedown="toggleCheckbox('q');" ontouchstart="toggleCheckbox('q');" >L</button>
+    <button class="button" style="display:inline-block" onmousedown="toggleCheckbox('w');" ontouchstart="toggleCheckbox('w');" onmouseup="toggleCheckbox('e');" ontouchend="toggleCheckbox('e');"></button>
+    <button class="button" style="display:inline-block" onmousedown="toggleCheckbox('e');" ontouchstart="toggleCheckbox('e');" >P</button>
+    <br>
+    <button class="button" style="display:inline-block" onmousedown="toggleCheckbox('a');" ontouchstart="toggleCheckbox('a');" onmouseup="toggleCheckbox('e');" ontouchend="toggleCheckbox('e');"></button>
+    <button class="button" style="display:inline-block" onmousedown="toggleCheckbox('s');" ontouchstart="toggleCheckbox('s');" onmouseup="toggleCheckbox('e');" ontouchend="toggleCheckbox('e');"></button>
+    <button class="button" style="display:inline-block" onmousedown="toggleCheckbox('d');" ontouchstart="toggleCheckbox('d');" onmouseup="toggleCheckbox('e');" ontouchend="toggleCheckbox('e');"></button>
+    <br>
+    <br>
+ 
+    <button class="button" onmousedown="toggleCheckbox('1');" ontouchstart="toggleCheckbox('1');" >To swedzi</button>
+    <button class="button" onmousedown="toggleCheckbox('2');" ontouchstart="toggleCheckbox('2');" >Nie dotykaj uszu</button>
+    <button class="button" onmousedown="toggleCheckbox('3');" ontouchstart="toggleCheckbox('3');" >Nie lep</button>
+    <button class="button" onmousedown="toggleCheckbox('4');" ontouchstart="toggleCheckbox('4');" >Denerwujesz</button>
+    <button class="button" onmousedown="toggleCheckbox('5');" ontouchstart="toggleCheckbox('5');" >Nie dotykaj glowy</button>
+    <button class="button" onmousedown="toggleCheckbox('6');" ontouchstart="toggleCheckbox('6');" >Nie chce bawic</button><br><br>
+    
+    <button class="button" onmousedown="toggleCheckbox('7');" ontouchstart="toggleCheckbox('7');" >Cieple rece</button>
+    <button class="button" onmousedown="toggleCheckbox('8');" ontouchstart="toggleCheckbox('8');" >Drapiesz za uszkiem</button>
+    <button class="button" onmousedown="toggleCheckbox('9');" ontouchstart="toggleCheckbox('9');" >Dobrze</button>
+    <button class="button" onmousedown="toggleCheckbox('10');" ontouchstart="toggleCheckbox('10');" >Nie przestawaj</button>
+    <button class="button" onmousedown="toggleCheckbox('11');" ontouchstart="toggleCheckbox('11');" >Uwu</button><br><br>
+    
+    <button class="button" onmousedown="toggleCheckbox('12');" ontouchstart="toggleCheckbox('12');" >Pobaw się</button>
+    <button class="button" onmousedown="toggleCheckbox('13');" ontouchstart="toggleCheckbox('13');" >Niski poziom bateri</button>
+    <button class="button" onmousedown="toggleCheckbox('14');" ontouchstart="toggleCheckbox('14');" >Co ty robisz</button>
+    <button class="button" onmousedown="toggleCheckbox('16');" ontouchstart="toggleCheckbox('15');" >mial</button>
+ 
+   
+   <script>
+   function toggleCheckbox(x) {
+     var xhr = new XMLHttpRequest();
+     xhr.open("GET", "/" + x, true);
+     xhr.send();
+   }
+  </script>
+  </body>
+</html>
+ 
